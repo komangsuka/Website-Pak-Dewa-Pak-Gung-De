@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasi</title>
+  <link rel="stylesheet" href="an.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <img src="../assets/burger.svg" alt="">
+      <div class="logo">
+        <img src="../assets/ti-nav.svg" alt="">
+        <p>SMK TI Bali Global Denpasar</p>
+      </div>
+    </div>
+    <img src="../assets/search.svg" alt="">
+  </div>
+  <div class="header">
+    <div class="flex-col">
+      <div class="image">
+        <img src="../assets/logo-tkj.svg" alt="">
+      </div>
+      <p id="judul">AN</p>
+      <p>Animasi</p>
+    </div>
+  </div>
+  <section id="informasi" class="section">
+    <p id="judul">Informasi Jurusan AN</p>
+    <p id="deskripsi">Animasi (AN) adalah bidang studi yang mempelajari proses pembuatan gambar bergerak, mulai dari perancangan karakter, storyboard, hingga produksi animasi menggunakan teknik manual maupun digital.</p>
+    <div class="kompetensi">
+      <div class="judul">
+        <p id="judul">Kompetensi</p>
+        <p id="deskripsi">Animasi merupakan ilmu yang lebih luas daripada sekadar membuat gambar bergerak, karena melibatkan berbagai area, seperti:</p>
+      </div>
+      <div class="list">
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Menyusun Script dan Storyboard</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Mengoperasikan Software dan Periferal Animasi 3D</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Membuat Gambar Animasi Secara Manual Maupun Digital</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Membuat karya animasi berupa film maupun media pemanfaatan lainnya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pekerjaan" class="section">
+    <p id="judul">Ruang Lingkup Pekerjaan</p>
+    <div class="container">
+      <div class="item">2D & 3D Animator</div>
+      <div class="item">Stop-Motion Artist</div>
+      <div class="item">VFX Artist</div>
+      <div class="item">Game Animation</div>
+      <div class="item">3D Model Artist</div>
+    </div>
+  </section>
+  <section id="ppdb" class="section">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/logo-ti.png" alt="" width="34px">
+      </div>
+      <p>Ayo daftar sekarang dan belajar di SMK TI Bali Global Denpasar!</p>
+      <a href="">Pendaftaran PPDB</a>
+      <div class="point">
+        <img src="../assets/image 3.png" alt="" width="122px">
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="section">
+    <div id="line"></div>
+    <p>Cek Jurusan Lainnya</p>
+    <div class="container">
+      <a class="item" href="../rpl/rpl.html">
+        <div class="image">
+          <img src="../assets/rpl.svg" alt="">
+        </div>
+        <p id="judul">RPL</p>
+        <p id="deskripsi">Rekayasa Perangkat Lunak</p>
+      </a>
+      <a class="item" href="../tkj/tkj.html">
+        <div class="image">
+          <img src="../assets/tkj.svg" alt="">
+        </div>
+        <p id="judul">TKJ</p>
+        <p id="deskripsi">Teknik Komputer Jaringan</p>
+      </a>
+      <a class="item" href="../dkv/dkv.html">
+        <div class="image">
+          <img src="../assets/dkv.svg" alt="">
+        </div>
+        <p id="judul">DKV</p>
+        <p id="deskripsi">Animasi</p>
+      </a>
+      <a class="item active">
+        <div class="image">
+          <img src="../assets/an-active.svg" alt="">
+        </div>
+        <p id="judul">AN</p>
+        <p id="deskripsi">Animasi</p>
+      </a>
+    </div>
+  </section>
+  <script>
+    const sections = document.querySelectorAll('.section');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+  
+</body>
+</html>

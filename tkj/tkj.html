@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknik Komputer Jaringan</title>
+  <link rel="stylesheet" href="tkj.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <img src="../assets/burger.svg" alt="">
+      <div class="logo">
+        <img src="../assets/ti-nav.svg" alt="">
+        <p>SMK TI Bali Global Denpasar</p>
+      </div>
+    </div>
+    <img src="../assets/search.svg" alt="">
+  </div>
+  <div class="header">
+    <div class="flex-col">
+      <div class="image">
+        <img src="../assets/logo-tkj.svg" alt="">
+      </div>
+      <p id="judul">TKJ</p>
+      <p>Teknik Komputer Jaringan</p>
+    </div>
+  </div>
+  <section id="informasi" class="section">
+    <p id="judul">Informasi Jurusan TKJ</p>
+    <p id="deskripsi">Teknik Komputer dan Jaringan (TKJ) adalah bidang studi yang mempelajari teknologi komputer dan jaringan yang meliputi perakitan, instalasi, konfigurasi, hingga pemeliharaan perangkat keras dan jaringan komputer.</p>
+    <div class="kompetensi">
+      <div class="judul">
+        <p id="judul">Kompetensi</p>
+        <p id="deskripsi">TKJ merupakan ilmu yang lebih luas daripada sekadar merakit komputer, karena melibatkan berbagai area, seperti:</p>
+      </div>
+      <div class="list">
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Melakukan Instalasi Hardware Komputer</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Melakukan Instalasi & Operasi Sistem Operasi PC</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Melakukan Instalasi & Operasi Sitem Operasi Server</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Merancang, Instalasi & Perawatan Jaringan Komputer & Internet (LAN & WAN)</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Teknik Dasar Operasi dan Perawatan Komputer</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Mengoperasikan Software Office (Perkantoran)</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Mengoperasikan Advance Programing</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Mengoperasikan Advance Programing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pekerjaan" class="section">
+    <p id="judul">Ruang Lingkup Pekerjaan</p>
+    <div class="container">
+      <div class="item">Network Service</div>
+      <div class="item">Internet Service</div>
+      <div class="item">Network Admin</div>
+      <div class="item">Teknisi Komputer</div>
+      <div class="item">Client-Server Install</div>
+      <div class="item">IT Consultant</div>
+    </div>
+  </section>
+  <section id="ppdb" class="section">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/logo-ti.png" alt="" width="34px">
+      </div>
+      <p>Ayo daftar sekarang dan belajar di SMK TI Bali Global Denpasar!</p>
+      <a href="">Pendaftaran PPDB</a>
+      <div class="point">
+        <img src="../assets/image 3.png" alt="" width="122px">
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="section">
+    <div id="line"></div>
+    <p>Cek Jurusan Lainnya</p>
+    <div class="container">
+      <a class="item" href="../rpl/rpl.html">
+        <div class="image">
+          <img src="../assets/rpl.svg" alt="">
+        </div>
+        <p id="judul">RPL</p>
+        <p id="deskripsi">Rekayasa Perangkat Lunak</p>
+      </a>
+      <a class="item active">
+        <div class="image">
+          <img src="../assets/tkj-active.svg" alt="">
+        </div>
+        <p id="judul">TKJ</p>
+        <p id="deskripsi">Teknik Komputer Jaringan</p>
+      </a>
+      <a class="item" href="../dkv/dkv.html">
+        <div class="image">
+          <img src="../assets/dkv.svg" alt="">
+        </div>
+        <p id="judul">DKV</p>
+        <p id="deskripsi">Desain Komunikasi Visual</p>
+      </a>
+      <a class="item" href="../an/an.html">
+        <div class="image">
+          <img src="../assets/an.svg" alt="">
+        </div>
+        <p id="judul">AN</p>
+        <p id="deskripsi">Animasi</p>
+      </a>
+    </div>
+  </section>
+  <script>
+    const sections = document.querySelectorAll('.section');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+  
+</body>
+</html>

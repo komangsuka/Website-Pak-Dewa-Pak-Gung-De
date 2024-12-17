@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desain Komunikasi Visual</title>
+  <link rel="stylesheet" href="dkv.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <img src="../assets/burger.svg" alt="">
+      <div class="logo">
+        <img src="../assets/ti-nav.svg" alt="">
+        <p>SMK TI Bali Global Denpasar</p>
+      </div>
+    </div>
+    <img src="../assets/search.svg" alt="">
+  </div>
+  <div class="header">
+    <div class="flex-col">
+      <div class="image">
+        <img src="../assets/logo-tkj.svg" alt="">
+      </div>
+      <p id="judul">DKV</p>
+      <p>Desain Komunikasi Visual</p>
+    </div>
+  </div>
+  <section id="informasi" class="section">
+    <p id="judul">Informasi Jurusan DKV</p>
+    <p id="deskripsi">Desain Komunikasi Visual (DKV) adalah bidang studi yang mempelajari proses penyampaian pesan melalui elemen visual, mulai dari desain grafis, ilustrasi, animasi, hingga pengembangan media interaktif.</p>
+    <div class="kompetensi">
+      <div class="judul">
+        <p id="judul">Kompetensi</p>
+        <p id="deskripsi">DKV merupakan ilmu yang lebih luas daripada sekadar mendesain, karena melibatkan berbagai area, seperti:</p>
+      </div>
+      <div class="list">
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Dasar Desain dan Desain Grafis</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Visual Persuasi (Advertising Consulting, Graphic Promotion, Production Design)</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Visual Informasi (Information Graphic Design, Illustration Design)</p>
+        </div>
+        <div class="flex">
+          <img src="../assets/check.svg" alt="">
+          <p>Visual Identitas (Branding Consulting, Logo Design, Web Design)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pekerjaan" class="section">
+    <p id="judul">Ruang Lingkup Pekerjaan</p>
+    <div class="container">
+      <div class="item">Graphic Designer</div>
+      <div class="item">Illustration Designer</div>
+      <div class="item">Production Designer</div>
+      <div class="item">Advertising</div>
+      <div class="item">Pertelevisian</div>
+      <div class="item">Web Designer</div>
+    </div>
+  </section>
+  <section id="ppdb" class="section">
+    <div class="container">
+      <div class="image">
+        <img src="../assets/logo-ti.png" alt="" width="34px">
+      </div>
+      <p>Ayo daftar sekarang dan belajar di SMK TI Bali Global Denpasar!</p>
+      <a href="">Pendaftaran PPDB</a>
+      <div class="point">
+        <img src="../assets/image 3.png" alt="" width="122px">
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="section">
+    <div id="line"></div>
+    <p>Cek Jurusan Lainnya</p>
+    <div class="container">
+      <a class="item" href="../rpl/rpl.html">
+        <div class="image">
+          <img src="../assets/rpl.svg" alt="">
+        </div>
+        <p id="judul">RPL</p>
+        <p id="deskripsi">Rekayasa Perangkat Lunak</p>
+      </a>
+      <a class="item" href="../tkj/tkj.html">
+        <div class="image">
+          <img src="../assets/tkj.svg" alt="">
+        </div>
+        <p id="judul">TKJ</p>
+        <p id="deskripsi">Teknik Komputer Jaringan</p>
+      </a>
+      <a class="item active">
+        <div class="image">
+          <img src="../assets/dkv-active.svg" alt="">
+        </div>
+        <p id="judul">DKV</p>
+        <p id="deskripsi">Desain Komunikasi Visual</p>
+      </a>
+      <a class="item" href="../an/an.html">
+        <div class="image">
+          <img src="../assets/an.svg" alt="">
+        </div>
+        <p id="judul">AN</p>
+        <p id="deskripsi">Animasi</p>
+      </a>
+    </div>
+  </section>
+  <script>
+    const sections = document.querySelectorAll('.section');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+  
+</body>
+</html>
